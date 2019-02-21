@@ -40,9 +40,10 @@ function trueAndFalseButtons() {
 };
 
 function toggleTrueAndFalseButtons() {
-  trueAndFalseButtons().forEach(button => {
-     button.classList.toggle("hide");
-  });
+  btns = trueAndFalseButtons();
+  for(let btn of btns){
+    btn.classList.toggle('hide');
+  };
 };
 
 
